@@ -25,11 +25,11 @@ const PRECACHE_URLS = [
   './assets/assets/weather/atmosphere.svg',
 
   // PWA icons
-  './assets/icons/icon-192.png',
-  './assets/icons/icon-512.png',
-  './assets/icons/maskable-192.png',
-  './assets/icons/maskable-512.png',
-  './assets/icons/apple-touch-icon-180.png'
+  './assets/assets/icons/icon-192.png',
+  './assets/assets/icons/icon-512.png',
+  './assets/assets/icons/maskable-192.png',
+  './assets/assets/icons/maskable-512.png',
+  './assets/assets/icons/apple-touch-icon-180.png'
 ];
 
 self.addEventListener('install', (event) => {
@@ -107,3 +107,4 @@ self.addEventListener('fetch', (event) => {
     fetch(req).catch(() => caches.match(req))
   );
 });
+
